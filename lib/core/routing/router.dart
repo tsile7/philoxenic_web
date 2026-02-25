@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:philoxenic_web/core/widgets/base_page_scaffold.dart';
-import 'package:philoxenic_web/presentation/company/about_view.dart';
-import 'package:philoxenic_web/presentation/contact/contact_view.dart';
-import 'package:philoxenic_web/presentation/home/home_view.dart';
-import 'package:philoxenic_web/presentation/platform/platform_view.dart';
-import 'package:philoxenic_web/presentation/products/products_view.dart';
-import 'package:philoxenic_web/presentation/security/security_view.dart';
+import 'package:philoxenic_web/ui/company/about_view.dart';
+import 'package:philoxenic_web/ui/contact/contact_view.dart';
+import 'package:philoxenic_web/ui/home/home_view.dart';
+import 'package:philoxenic_web/ui/platform/platform_view.dart';
+import 'package:philoxenic_web/ui/products/products_view.dart';
+import 'package:philoxenic_web/ui/security/security_view.dart';
 
 final router = GoRouter(
   initialLocation: '/',
