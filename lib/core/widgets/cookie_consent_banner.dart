@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../privacy/cookie_consent_service.dart';
-import '../analytics/analytics_service.dart';
+import '../../config/privacy/cookie_consent_service.dart';
+import '../../config/analytics/analytics_service.dart';
 
 class CookieConsentBanner extends StatefulWidget {
   const CookieConsentBanner({super.key});

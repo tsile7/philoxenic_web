@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import '../seo/seo_manager.dart';
-import '../analytics/analytics_service.dart';
+import '../../config/seo/seo_manager.dart';
+import '../../config/analytics/analytics_service.dart';
 
 class SeoWrapper extends StatefulWidget {
   final Widget child;
