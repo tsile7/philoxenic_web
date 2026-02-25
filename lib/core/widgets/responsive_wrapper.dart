@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+
+class ResponsiveWrapper extends StatelessWidget {
+    final Widget mobile;
+    final Widget tablet;
+    final Widget desktop;
+
+    const ResponsiveWrapper({super.key, required this.mobile, required this.tablet, required this.desktop});
+
+    @override
+    Widget build(BuildContext context) {
+        final width = MediaQuery.of(context).size.width;
+
+
+        if (width < 600) return mobile;
+        if (width < 1100) return tablet;
+        return desktop;
+    }
+}
