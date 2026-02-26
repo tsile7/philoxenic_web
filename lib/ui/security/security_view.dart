@@ -355,7 +355,7 @@ class _SecurityFeaturesSection extends StatelessWidget {
                 crossAxisCount: MediaQuery.of(context).size.width > 900 ? 2 : 1,
                 crossAxisSpacing: 32,
                 mainAxisSpacing: 32,
-                childAspectRatio: MediaQuery.of(context).size.width > 900 ? 2.5 : 3,
+                childAspectRatio: MediaQuery.of(context).size.width > 900 ? 5.5 : 5.5,
                 children: [
                   _SecurityFeature(
                     icon: Icons.lock_outline,

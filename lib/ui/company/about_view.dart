@@ -70,13 +70,22 @@ class _HeroSection extends StatelessWidget {
                 ).animate().fadeIn(duration: 600.ms).slideY(begin: 0.3, end: 0),
                 const SizedBox(height: 24),
                 Text(
-                  'Building enterprise-grade software solutions that transform businesses and empower teams.',
+                  'An innovative South African IT company dedicated to developing cutting-edge, user-centered software solutions for businesses and individuals. Rooted in the country’s dynamic tech ecosystem and inspired by the spirit of generosity and genuine care, the company places hospitality, community, and client relationships at the heart of its work.',
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         color: Colors.grey.shade400,
                         height: 1.6,
                       ),
                 ).animate().fadeIn(duration: 600.ms, delay: 200.ms),
+                const SizedBox(height: 24),
+                Text(
+                'Philoxenic exists to make a meaningful impact—combining creativity and technical expertise to deliver high-performance enterprise systems and consumer applications while upholding ethical, sustainable, and socially responsible practices. With a vision that is global yet grounded in local values, Philoxenic is committed to empowering people, strengthening communities, and driving positive change through technology.',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      color: Colors.grey.shade400,
+                      height: 1.8,
+                    ),
+              ).animate().fadeIn(duration: 600.ms, delay: 400.ms),
               ],
             ),
           ),
@@ -130,7 +139,7 @@ class _MissionSection extends StatelessWidget {
               ).animate().fadeIn(duration: 600.ms).slideY(begin: 0.2, end: 0),
               const SizedBox(height: 32),
               Text(
-                'At Philoxenic, we believe technology should empower, not complicate. Our mission is to build scalable SaaS and mobile platforms that are intuitive, secure, and designed with the end user in mind.',
+                'To deliver innovative and responsible software solutions while uplifting society through ethical practices, sustainable development, and youth empowerment.',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: Colors.grey.shade400,
@@ -138,14 +147,6 @@ class _MissionSection extends StatelessWidget {
                     ),
               ).animate().fadeIn(duration: 600.ms, delay: 200.ms),
               const SizedBox(height: 24),
-              Text(
-                'We create software solutions that modern enterprises and growing businesses can rely on for their digital transformation journey.',
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.grey.shade400,
-                      height: 1.8,
-                    ),
-              ).animate().fadeIn(duration: 600.ms, delay: 400.ms),
             ],
           ),
         ),
@@ -202,36 +203,36 @@ class _ValuesSection extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 crossAxisCount: MediaQuery.of(context).size.width > 900 ? 2 : 1,
-                crossAxisSpacing: 32,
-                mainAxisSpacing: 32,
-                childAspectRatio: MediaQuery.of(context).size.width > 900 ? 1.3 : 1.5,
+                crossAxisSpacing: 24,
+                mainAxisSpacing: 24,
+                childAspectRatio: MediaQuery.of(context).size.width > 900 ? 1.8 : 2.2,
                 children: [
                   _ValueCard(
                     icon: Icons.handshake_outlined,
-                    title: 'Hospitality-Driven',
+                    title: 'Integrity',
                     description:
-                        'Just as "philoxenic" means hospitable, we put users first in everything we build, creating welcoming experiences.',
+                        'We do what’s right—always.',
                     delay: 0,
                   ),
                   _ValueCard(
                     icon: Icons.lightbulb_outline,
-                    title: 'Innovation',
+                    title: 'Creativity',
                     description:
-                        'We stay at the forefront of technology, leveraging the latest tools to deliver cutting-edge solutions.',
+                        'We innovate with purpose and forward-thinking.',
                     delay: 100,
                   ),
                   _ValueCard(
                     icon: Icons.verified_user_outlined,
-                    title: 'Trust & Security',
+                    title: 'Reliability',
                     description:
-                        'Security and compliance are built into our DNA. We protect your data with enterprise-grade measures.',
+                        'We deliver consistently and stand by our work.',
                     delay: 200,
                   ),
                   _ValueCard(
                     icon: Icons.groups_outlined,
-                    title: 'Collaboration',
+                    title: 'Hospitality & Social Responsibility',
                     description:
-                        'We work closely with our clients as partners, ensuring solutions align with their business goals.',
+                        'We treat every client with warmth and respect, making thoughtful choices that benefit both business and society.',
                     delay: 300,
                   ),
                 ],
@@ -365,7 +366,7 @@ class _StatsSection extends StatelessWidget {
               ),
               const SizedBox(height: 32),
               Text(
-                'Decades of Combined Experience',
+                'Combined Experience',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
                       fontWeight: FontWeight.w700,
@@ -378,9 +379,9 @@ class _StatsSection extends StatelessWidget {
                 runSpacing: 64,
                 alignment: WrapAlignment.center,
                 children: [
-                  _StatItem(number: '50+', label: 'Projects Delivered', delay: 0),
-                  _StatItem(number: '15+', label: 'Years Experience', delay: 100),
-                  _StatItem(number: '99.9%', label: 'Uptime SLA', delay: 200),
+                  _StatItem(number: '99.9%', label: 'Uptime SLA', delay: 0),
+                  _StatItem(number: '10+', label: 'Projects Delivered', delay: 100),
+                  _StatItem(number: '7+', label: 'Years Experience', delay: 200),
                   _StatItem(number: '24/7', label: 'Support Available', delay: 300),
                 ],
               ),
@@ -476,7 +477,7 @@ class _TeamSection extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'Join Our Growing Team',
+                  'Join Our Community',
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.displaySmall?.copyWith(
                         fontWeight: FontWeight.w700,
@@ -485,7 +486,7 @@ class _TeamSection extends StatelessWidget {
                 ).animate().fadeIn(duration: 600.ms),
                 const SizedBox(height: 24),
                 Text(
-                  'We\'re always looking for talented individuals passionate about building great software.',
+                  'We\'re always looking for talented individuals passionate about tech.',
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         color: Colors.grey.shade400,
@@ -494,7 +495,7 @@ class _TeamSection extends StatelessWidget {
                 ).animate().fadeIn(duration: 600.ms, delay: 200.ms),
                 const SizedBox(height: 48),
                 _AnimatedButton(
-                  text: 'View Open Positions',
+                  text: 'View Channel',
                   onPressed: () {},
                 ).animate().fadeIn(duration: 600.ms, delay: 400.ms).scale(),
               ],
