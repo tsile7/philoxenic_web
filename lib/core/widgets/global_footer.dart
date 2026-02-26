@@ -218,7 +218,7 @@ class GlobalFooter extends StatelessWidget {
             fontSize: 13,
           ),
         ),
-        Row(
+        /*Row(
           children: [
             MouseRegion(
               cursor: SystemMouseCursors.click,
@@ -242,7 +242,7 @@ class GlobalFooter extends StatelessWidget {
               ),
             ),
           ],
-        ),
+        ),*/
       ],
     );
   }

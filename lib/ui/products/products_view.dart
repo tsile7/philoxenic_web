@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:philoxenic_web/core/widgets/global_footer.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -141,9 +142,9 @@ class _ProductsSection extends StatelessWidget {
               ),
               const SizedBox(height: 32),
               _ProductCard(
-                title: 'Mobile Applications',
+                title: 'Web and Mobile Applications',
                 description:
-                    'Native and cross-platform mobile apps delivering seamless experiences across iOS and Android.',
+                    'Native, cross-platform web & mobile apps delivering seamless experiences across iOS and Android.',
                 features: [
                   'Cross-platform development',
                   'Offline-first capabilities',
@@ -339,7 +340,7 @@ class _ProductCardState extends State<_ProductCard> {
                   _GradientButton(
                     text: 'Learn More',
                     gradientColors: widget.gradientColors,
-                    onPressed: () {},
+                    onPressed: ()  => context.goNamed('contact'),
                   ),
                 ],
               ),
@@ -485,7 +486,7 @@ class _FeaturesSection extends StatelessWidget {
                   ),
                   _FeatureItem(
                     icon: Icons.security,
-                    title: 'Bank-Level Security',
+                    title: 'Security',
                     description: 'Enterprise-grade encryption',
                     delay: 200,
                   ),
@@ -498,7 +499,7 @@ class _FeaturesSection extends StatelessWidget {
                   _FeatureItem(
                     icon: Icons.language,
                     title: 'Multi-Language',
-                    description: '50+ languages supported',
+                    description: '50+ languages on-demand supported',
                     delay: 400,
                   ),
                   _FeatureItem(

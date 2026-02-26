@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:go_router/go_router.dart';
 import '../../core/widgets/global_footer.dart';
 
 class HomeView extends StatelessWidget {
@@ -21,7 +22,7 @@ class _HomeContent extends StatelessWidget {
         children: [
             _HeroSection(),
             _TrustedBySection(),
-            _AboutSection(),
+            //_AboutSection(),
             _BenefitsSection(),
             _FeaturesSection(),
             _StepsSection(),
@@ -70,7 +71,7 @@ class _HeroSection extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Drive Growth Using',
+                      'Welcome To Philoxenic',
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.displayLarge?.copyWith(
                             fontWeight: FontWeight.w800,
@@ -88,7 +89,7 @@ class _HeroSection extends StatelessWidget {
                         colors: [Color(0xFF2ECC71), Color(0xFF00D4FF)],
                       ).createShader(bounds),
                       child: Text(
-                        'Enterprise SaaS Solutions',
+                        'Innovative. Reliable. Human-Centered.',
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.displayLarge?.copyWith(
                               fontWeight: FontWeight.w800,
@@ -103,7 +104,7 @@ class _HeroSection extends StatelessWidget {
                         .slideY(begin: 0.3, end: 0),
                     const SizedBox(height: 32),
                     Text(
-                      'Philoxenic harnesses modern technology to transform enterprises, empower teams, and drive measurable progress across innovation and digital transformation.',
+                      'Philoxenic is a South African IT company dedicated to creating powerful, user-friendly software solutions for businesses and individuals. Our approach blends cutting-edge technology with the warmth, generosity, and integrity reflected in our name.',
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                             color: Colors.grey.shade400,
@@ -264,7 +265,7 @@ class _TrustedBySection extends StatelessWidget {
   }
 }
 
-class _AboutSection extends StatelessWidget {
+/*class _AboutSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -315,7 +316,7 @@ class _AboutSection extends StatelessWidget {
       ),
     );
   }
-}
+}*/
 
 class _SectionLabel extends StatelessWidget {
   final String text;
@@ -358,7 +359,7 @@ class _BenefitsSection extends StatelessWidget {
               _SectionLabel('Benefits'),
               const SizedBox(height: 32),
               Text(
-                'Achieve Greater Results With Automation',
+                'Why Choose Us?',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
                       fontWeight: FontWeight.w700,
@@ -376,23 +377,23 @@ class _BenefitsSection extends StatelessWidget {
                 children: [
                   _BenefitCard(
                     icon: Icons.trending_up,
-                    title: 'Increased Productivity',
+                    title: 'Client-focused Approach',
                     description:
-                        'AI increases productivity by automating routine tasks, freeing employees to focus on high-impact work.',
+                        'Putting the client’s needs first and delivering tailored solutions that create real value.',
                     delay: 0,
                   ),
                   _BenefitCard(
                     icon: Icons.attach_money,
-                    title: 'Cost Efficiency',
+                    title: 'Ethical & Sustainable Practices',
                     description:
-                        'Reduce costs by automating tasks, streamlining processes, and eliminating repetitive errors.',
+                        'Acting with integrity while making socially and environmentally responsible decisions.',
                     delay: 200,
                   ),
                   _BenefitCard(
                     icon: Icons.auto_awesome,
-                    title: 'Easy Scalability',
+                    title: 'Empowering Technology + People',
                     description:
-                        'Scale efficiently by meeting growing demand without needing equivalent resources.',
+                        'Using technology to drive results while supporting people’s growth and success.',
                     delay: 400,
                   ),
                 ],
@@ -529,24 +530,42 @@ class _FeaturesSection extends StatelessWidget {
               ).animate().fadeIn(duration: 600.ms),
               const SizedBox(height: 64),
               _FeatureRow(
-                title: 'Process Automation',
+                title: 'Custom Software Development',
                 description:
-                    'Automate repetitive tasks to streamline workflows, reduce manual labor, and enhance productivity.',
+                    'We design and build tailored software solutions engineered to meet unique business needs, enhance workflows, and drive long-term growth.',
                 isReversed: false,
               ),
               const SizedBox(height: 48),
               _FeatureRow(
-                title: 'Smart Integration',
+                title: 'Web Application Development',
                 description:
-                    'Stay connected and collaborate seamlessly with integrated tools and productivity platforms.',
+                    'Modern, fast, secure, and responsive web apps that deliver seamless user experiences across all devices.',
                 isReversed: true,
               ),
               const SizedBox(height: 48),
               _FeatureRow(
-                title: 'Predictive Insights',
+                title: 'Mobile Application Development',
                 description:
-                    'Utilize AI-driven analytics to anticipate trends and make data-informed decisions.',
+                    'Intuitive and scalable Android and iOS mobile applications that keep users engaged and connected.',
                 isReversed: false,
+              ),
+              _FeatureRow(
+                title: 'Business Systems & Automation',
+                description:
+                    'Improve efficiency and reduce manual work with bespoke systems and automated workflows that simplify operations.',
+                isReversed: true,
+              ),
+              _FeatureRow(
+                title: 'UI/UX Design',
+                description:
+                    'Human-centered design that ensures your product is visually engaging, intuitive, and easy to use.',
+                isReversed: false,
+              ),
+              _FeatureRow(
+                title: 'IT Consulting & Support',
+                description:
+                    'Expert guidance to help you make the right technology decisions—plus ongoing support to keep your systems running smoothly.',
+                isReversed: true,
               ),
             ],
           ),
@@ -638,7 +657,7 @@ class _StepsSection extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                '4 Simple Steps',
+                '3 Simple Reasons',
                 style: TextStyle(
                   color: Color(0xFF2ECC71),
                   fontSize: 14,
@@ -648,7 +667,7 @@ class _StepsSection extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               Text(
-                'How It Works',
+                'Why We Are Here',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
                       fontWeight: FontWeight.w700,
@@ -656,12 +675,12 @@ class _StepsSection extends StatelessWidget {
                     ),
               ),
               const SizedBox(height: 64),
-              ...List.generate(4, (index) {
+              ...List.generate(3, (index) {
                 final steps = [
-                  ('Assess Your Needs', 'We examine your goals and challenges to determine where our solutions can be most useful.'),
-                  ('Implement Solutions', 'Our team integrates tools seamlessly into your existing systems.'),
-                  ('Automate & Optimize', 'Streamline workflows and improve efficiency across your organization.'),
-                  ('Analyze & Improve', 'Monitor performance and refine processes for continuous improvement.'),
+                  ('Purpose', 'We go beyond software, focusing on sustainability, ethics, and meaningful community impact—not just financial success.'),
+                  ('Potential', 'We create innovative, user-focused software that combines advanced technology and strategic thinking to deliver high-performance, human-centered digital solutions.'),
+                  ('Destiny', 'Philoxenic aims to grow locally and globally by delivering innovative, responsible technology that empowers people and businesses while driving positive change.'),
+                  //('Analyze & Improve', 'Monitor performance and refine processes for continuous improvement.'),
                 ];
                 return _StepItem(
                   number: '0${index + 1}',
@@ -787,7 +806,7 @@ class _CTASection extends StatelessWidget {
               _AnimatedButton(
                 text: 'Contact Us',
                 isPrimary: true,
-                onPressed: () {},
+                onPressed: () => context.goNamed('contact'),
               ).animate().fadeIn(duration: 600.ms, delay: 400.ms).scale(),
             ],
           ),

@@ -305,20 +305,24 @@ class _CustomDropdownState extends State<_CustomDropdown> {
       ),
       items: const [
         DropdownMenuItem(
-          value: 'saas',
-          child: Text('SaaS Platform'),
+          value: 'custom',
+          child: Text('Custom Software Development'),
         ),
         DropdownMenuItem(
           value: 'mobile',
-          child: Text('Mobile Application'),
+          child: Text('Web & Mobile Application Solutions'),
         ),
         DropdownMenuItem(
-          value: 'both',
-          child: Text('Both Solutions'),
+          value: 'business',
+          child: Text('Business Systems & Automation'),
+        ),
+        DropdownMenuItem(
+          value: 'ux',
+          child: Text('UX/UI Design & Digital Experience'),
         ),
         DropdownMenuItem(
           value: 'consulting',
-          child: Text('Consulting Services'),
+          child: Text('IT Consulting Services & Support'),
         ),
       ],
       onChanged: (value) => setState(() => _selectedValue = value),
