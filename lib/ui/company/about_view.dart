@@ -205,7 +205,7 @@ class _ValuesSection extends StatelessWidget {
                 crossAxisCount: MediaQuery.of(context).size.width > 900 ? 2 : 1,
                 crossAxisSpacing: 24,
                 mainAxisSpacing: 24,
-                childAspectRatio: MediaQuery.of(context).size.width > 900 ? 1.8 : 2.2,
+                childAspectRatio: MediaQuery.of(context).size.width > 900 ? 1.7 : 2.2,
                 children: [
                   _ValueCard(
                     icon: Icons.handshake_outlined,

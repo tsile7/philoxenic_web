@@ -121,13 +121,13 @@ class _HeroSection extends StatelessWidget {
                         _AnimatedButton(
                           text: 'Get Started',
                           isPrimary: true,
-                          onPressed: () {},
+                          onPressed: () => context.goNamed('contact'),
                         ).animate().fadeIn(duration: 600.ms, delay: 600.ms).scale(),
                         const SizedBox(width: 16),
                         _AnimatedButton(
                           text: 'Explore Solutions',
                           isPrimary: false,
-                          onPressed: () {},
+                          onPressed: () => context.goNamed('products'),
                         ).animate().fadeIn(duration: 600.ms, delay: 700.ms).scale(),
                       ],
                     ),

@@ -91,7 +91,7 @@ class _GlobalNavBarState extends State<GlobalNavBar> {
             actions: mobile
                 ? []
                 : [
-                    const _NavItem('Platform', '/platform'),
+                    //const _NavItem('Platform', '/platform'),
                     const _NavItem('About', '/about'),
                     const _NavItem('Products', '/products'),
                     const _NavItem('Security', '/security'),

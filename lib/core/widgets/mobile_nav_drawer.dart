@@ -47,7 +47,7 @@ class MobileNavDrawer extends StatelessWidget {
             ),
             const Divider(height: 1, color: Colors.white12),
             const SizedBox(height: 8),
-            const _Item('Platform', '/platform'),
+            // const _Item('Platform', '/platform'),
             const _Item('About', '/about'),
             const _Item('Products', '/products'),
             const _Item('Security', '/security'),

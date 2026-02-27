@@ -21,11 +21,11 @@ final router = GoRouter(
           name: 'home',
           builder: (context, state) => const HomeView(),
         ),
-        GoRoute(
+        /*GoRoute(
           path: '/platform',
           name: 'platform',
-          builder: (context, state) => const PlatformView(),
-        ),
+          builder: (context, state) => const PlatformView(), // TODO: Edit later with our products
+        ),*/
         GoRoute(
           path: '/about',
           name: 'about',

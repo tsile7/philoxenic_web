@@ -78,7 +78,6 @@ class GlobalFooter extends StatelessWidget {
         _buildBrandSection(),
         const SizedBox(height: 32),
         _buildLinksSection('Pages', [
-          'Platform',
           'About',
           'Products',
           'Security',

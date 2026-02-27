@@ -152,7 +152,7 @@ class _ContactForm extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Request a Demo',
+          'Get in touch',
           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                 fontWeight: FontWeight.w700,
                 color: Colors.white,
@@ -433,7 +433,7 @@ class _BenefitsCard extends StatelessWidget {
         _BenefitItem(
           icon: Icons.security,
           title: 'Enterprise Security',
-          description: 'Bank-level security and compliance standards',
+          description: 'Top-level security and compliance standards',
           delay: 300,
         ),
       ],
