@@ -54,7 +54,6 @@ class GlobalFooter extends StatelessWidget {
         const SizedBox(width: 80),
         Expanded(
           child: _buildLinksSection('Pages', [
-            'Platform',
             'About',
             'Products',
             'Security',
@@ -217,31 +216,6 @@ class GlobalFooter extends StatelessWidget {
             fontSize: 13,
           ),
         ),
-        /*Row(
-          children: [
-            MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: const Text(
-                'Privacy Policy',
-                style: TextStyle(
-                  color: Colors.white38,
-                  fontSize: 13,
-                ),
-              ),
-            ),
-            const SizedBox(width: 24),
-            MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: const Text(
-                'Terms of Service',
-                style: TextStyle(
-                  color: Colors.white38,
-                  fontSize: 13,
-                ),
-              ),
-            ),
-          ],
-        ),*/
       ],
     );
   }

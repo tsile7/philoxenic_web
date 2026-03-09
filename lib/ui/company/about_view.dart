@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:philoxenic_web/core/widgets/global_footer.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:philoxenic_web/ui/company/about_viewmodel.dart';
 
 class AboutView extends StatelessWidget {
   const AboutView({super.key});
@@ -496,7 +497,9 @@ class _TeamSection extends StatelessWidget {
                 const SizedBox(height: 48),
                 _AnimatedButton(
                   text: 'View Channel',
-                  onPressed: () {},
+                  onPressed: () async {
+                    await openWhatsAppChannel();
+                  },
                 ).animate().fadeIn(duration: 600.ms, delay: 400.ms).scale(),
               ],
             ),

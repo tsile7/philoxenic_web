@@ -4,7 +4,7 @@ import 'package:philoxenic_web/core/widgets/base_page_scaffold.dart';
 import 'package:philoxenic_web/ui/company/about_view.dart';
 import 'package:philoxenic_web/ui/contact/contact_view.dart';
 import 'package:philoxenic_web/ui/home/home_view.dart';
-import 'package:philoxenic_web/ui/platform/platform_view.dart';
+//import 'package:philoxenic_web/ui/platform/platform_view.dart';
 import 'package:philoxenic_web/ui/products/products_view.dart';
 import 'package:philoxenic_web/ui/security/security_view.dart';
 
