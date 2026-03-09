@@ -8,3 +8,10 @@ class HomeViewModel extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+class FooterLink {
+  final String title;
+  final String route;
+
+  FooterLink(this.title, this.route);
+}

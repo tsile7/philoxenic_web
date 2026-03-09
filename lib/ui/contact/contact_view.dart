@@ -561,7 +561,7 @@ class _ContactInfoSection extends StatelessWidget {
                   _ContactInfoCard(
                     icon: Icons.phone_outlined,
                     title: 'Call Us',
-                    content: '+27 81 781 9256',
+                    content: '+27 76 056 6738',
                     description: 'Mon-Fri from 9am to 4pm SAST',
                     delay: 200,
                   ),

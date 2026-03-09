@@ -70,7 +70,7 @@ class _HeroSection extends StatelessWidget {
                 ).animate().fadeIn(duration: 600.ms).slideY(begin: 0.3, end: 0),
                 const SizedBox(height: 24),
                 Text(
-                  'From SaaS platforms to mobile applications, we deliver comprehensive solutions for modern enterprises.',
+                  'From SaaS platforms, websites to mobile/web applications, we deliver comprehensive solutions for modern enterprises.',
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         color: Colors.grey.shade400,
