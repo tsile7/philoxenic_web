@@ -17,30 +17,10 @@ class MobileNavDrawer extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               child: Row(
                 children: [
-                  Container(
-                    width: 40,
+                  Image.asset(
+                    'assets/images/p.png',
                     height: 40,
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFF2ECC71), Color(0xFF00D4FF)],
-                      ),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Icon(
-                      Icons.spa_outlined,
-                      color: Colors.white,
-                      size: 24,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  const Text(
-                    'Philoxenic',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: -0.5,
-                      color: Colors.white,
-                    ),
+                    fit: BoxFit.contain,
                   ),
                 ],
               ),

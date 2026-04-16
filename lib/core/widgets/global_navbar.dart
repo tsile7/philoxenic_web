@@ -54,36 +54,10 @@ class _GlobalNavBarState extends State<GlobalNavBar> {
                 onTap: () => context.go('/'),
                 child: MouseRegion(
                   cursor: SystemMouseCursors.click,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      // Logo placeholder - replace with actual logo
-                      Container(
-                        width: 40,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            colors: [Color(0xFF2ECC71), Color(0xFF00D4FF)],
-                          ),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: const Icon(
-                          Icons.spa_outlined,
-                          color: Colors.white,
-                          size: 24,
-                        ),
-                      ),
-                      const SizedBox(width: 12),
-                      const Text(
-                        'Philoxenic',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: -0.5,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                  child: Image.asset(
+                    'assets/images/philoxenic_logo_transparent.png',
+                    height: 48,
+                    fit: BoxFit.contain,
                   ),
                 ),
               ),
